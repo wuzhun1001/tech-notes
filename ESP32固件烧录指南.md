@@ -1,7 +1,7 @@
 * [准备工作](#准备工作)
-* [系统烧录ESP32固件](#一-MAC系统)
-* [二 Ubuntu系统下烧录ESP32固件 ](二-Ubuntu系统)
-* [三 Windows系统下烧录ESP32固件](三-Windows系统)
+* [一 MAC系统烧录ESP32固件](#MAC系统)
+* [二 Ubuntu系统下烧录ESP32固件 ](Ubuntu系统)
+* [三 Windows系统下烧录ESP32固件](Windows系统)
 
   
 
@@ -24,7 +24,7 @@ ESP32使用USB转串口进行烧录，所以需要安装串口驱动：
 
 
 
-### 一 MAC系统
+### MAC系统
 
 1） 安装python2.7 和 pip。
 
@@ -101,7 +101,7 @@ FAQ：如前所述，如果端口找不到，请确认端口号正确，如firmw
 
 
 
-### 二 Ubuntu系统
+### Ubuntu系统
 
 1） 安装python2.7 和 pip。
 
@@ -188,7 +188,7 @@ FAQ：如前所述，如果端口找不到，请确认端口号正确，如firmw
 
 
 
-### 三 Windows系统
+### Windows系统
 
 1） 安装python2.7 
 
