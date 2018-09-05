@@ -24,9 +24,11 @@ ESP32使用USB转串口进行烧录，所以需要安装串口驱动：
 
 
 
+***
+
 ### 一 MAC系统下烧录
 
-1） 安装python2.7 和 pip。
+1.  安装python2.7 和 pip。
 
 *  python2.7 下载地址： [下载地址](https://www.python.org/downloads/release/python-2715)   ，请选择对应系统的python2.7下载并安装。
 
@@ -40,7 +42,7 @@ ESP32使用USB转串口进行烧录，所以需要安装串口驱动：
 
 
 
-2）安装esptool.py
+2. 安装esptool.py
 
 这是一个用python开发的针对ESP32的小工具，可以实现底层的操作,包括Flash的烧写，擦除。它也是一个开源项目，项目在github上进行托管, [托管地址](https://github.com/themadinventor/esptool)
 
@@ -51,13 +53,15 @@ pip install esptool
 pip install pyserial
 ```
 
-3）测试esptool.py是否生效
+
+
+3. 测试esptool.py是否生效
 
 打开终端，输入`esptool.py` 查看是否有输出，如果esptool.py安装正常，会输出 【usage: esptool 】 类似信息。
 
 
 
-4）擦除flash （**仅首次烧录需要**）
+4. 擦除flash （**仅首次烧录需要**）
 
 由于官方flash参数和分区表与TinyEngine定制固件可能不同，所以在您首次烧录TinyEngine固件时需要先擦除一遍Flash。以后再次更新TinyEngine时则不需要重复该操作了。
 
@@ -75,7 +79,7 @@ FAQ:
 
 
 
-**5）使用esptool.py命令烧写TinyEngine固件**
+5. **使用esptool.py命令烧写TinyEngine固件**
 
 进入到 TinyEngine项目的 firmware/esp32/esp32-devkitc目录，可以看到有如下文件
 
@@ -101,9 +105,15 @@ FAQ：如前所述，如果端口找不到，请确认端口号正确，如firmw
 
 
 
+
+
+***
+
 ### 二 Ubuntu系统下烧录
 
-1） 安装python2.7 和 pip。
+
+
+1. 安装python2.7 和 pip。
 
 ```
 sudo apt-get install python2.7 python2.7-dev
@@ -114,7 +124,7 @@ sudo apt-get install python-pip
 
 
 
-2）安装esptool.py
+2. 安装esptool.py
 
 这是一个用python开发的针对ESP32的小工具，可以实现底层的操作,包括Flash的烧写，擦除。它也是一个开源项目，项目在github上进行托管, [托管地址](https://github.com/themadinventor/esptool)
 
@@ -126,9 +136,7 @@ python -m pip install esptool
 
 
 
-
-
- 3) 安装pyserial串口通信工具。
+3. 安装pyserial串口通信工具。
 
 ```
 python -m pip install pyserial
@@ -136,13 +144,13 @@ python -m pip install pyserial
 
 
 
-4）测试esptool.py是否生效
+4. 测试esptool.py是否生效
 
 打开终端，输入`esptool.py` 查看是否有输出，如果esptool.py安装正常，会输出`usage: esptool [-h] [—chip {auto,esp8266,esp32}] [—port PORT] [--baud BAUD]` 类似信息。
 
 
 
-5）擦除flash （**仅首次烧录需要**）
+5. 擦除flash （**仅首次烧录需要**）
 
 由于官方flash参数和分区表与TinyEngine定制固件可能不通，所以在您首次烧录TinyEngine固件时需要先擦除一遍Flash。以后再次更新TinyEngine时则不需要重复该操作了。
 
@@ -162,7 +170,7 @@ FAQ:
 
 
 
-**5）使用esptool.py命令烧写TinyEngine固件**
+6. **使用esptool.py命令烧写TinyEngine固件**
 
 进入到 TinyEngine项目的 [firmware/esp32/esp32-devkitc] 目录，可以看到有如下文件
 
@@ -188,9 +196,13 @@ FAQ：如前所述，如果端口找不到，请确认端口号正确，如firmw
 
 
 
+***
+
 ### 三 Windows系统下烧录
 
-1） 安装python2.7 
+
+
+1. 安装python2.7 
 
 * 下载python2.7对应的windows安装包并安装，[地址](https://www.python.org/downloads/windows/)
 
@@ -198,7 +210,7 @@ FAQ：如前所述，如果端口找不到，请确认端口号正确，如firmw
 
 
 
-2） 安装pip。
+2. 安装pip。
 
 * 下载地址是：https://pypi.python.org/pypi/pip#downloads ：
 
@@ -218,7 +230,7 @@ FAQ: 安装好之后，我们直接在命令行输入pip，如果显示‘pip’
 
 
 
-3）安装esptool.py
+3. 安装esptool.py
 
 这是一个用python开发的针对ESP32的小工具，可以实现底层的操作,包括Flash的烧写，擦除。它也是一个开源项目，项目在github上进行托管, [托管地址](https://github.com/themadinventor/esptool)
 
@@ -230,7 +242,7 @@ python -m pip install esptool
 
 
 
- 3) 安装pyserial串口通信工具。
+4. 安装pyserial串口通信工具。
 
 ```
 python -m pip install pyserial
@@ -238,7 +250,7 @@ python -m pip install pyserial
 
 
 
-4）测试python和esptool.py是否生效
+5. 测试python和esptool.py是否生效
 
 打开终端，输入`python —version`查看版本是否正确。
 
@@ -246,7 +258,7 @@ python -m pip install pyserial
 
 
 
-5）擦除flash （**仅首次烧录需要**）
+6. 擦除flash （**仅首次烧录需要**）
 
 由于官方flash参数和分区表与TinyEngine定制固件可能不通，所以在您首次烧录TinyEngine固件时需要先擦除一遍Flash。以后再次更新TinyEngine时则不需要重复该操作了。
 
@@ -266,7 +278,7 @@ FAQ:
 
 
 
-**5）使用esptool.py命令烧写TinyEngine固件**
+7. **使用esptool.py命令烧写TinyEngine固件**
 
 * 进入到 TinyEngine项目的`firmware/esp32/esp32-devkitc` 目录，可以看到有如下文件
 
