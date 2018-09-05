@@ -1,5 +1,5 @@
 * [准备工作](#准备工作)
-* [一 MAC系统烧录ESP32固件](#MAC)
+* [一 MAC系统烧录ESP32固件](#mac)
 * [二 Ubuntu系统下烧录ESP32固件 ](Ubuntu系统)
 * [三 Windows系统下烧录ESP32固件](Windows系统)
 
